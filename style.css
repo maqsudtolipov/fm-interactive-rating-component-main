@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #e9efff;
+  background-color: #141519;
+  /* background-image: url('./design/desktop-design.jpg'); */
+  /* background-position: center; */
+  /* background-size: cover; */
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 41rem;
+  background-image: linear-gradient(to bottom, #232a33, #181d25);
+  border-radius: 3.2rem;
+  padding: 3.2rem;
+
+  /* temp */
+  /* opacity: 0.5; */
+  /* min-height: 41rem; */
+}
+
+.card__icon {
+  display: inline-block;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-bottom: 3.2rem;
+}
+
+.card__heading {
+  font-size: 2.8rem;
+  letter-spacing: -0.2px;
+  margin-bottom: 1.6rem;
+}
+
+.card__paragraph {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #959eac;
+  margin-bottom: 2.8rem;
+}
+
+.card__list {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.4rem;
+}
+
+.card__number {
+  font-size: 1.6rem;
+  font-family: 700;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  transition: 0.2s;
+
+  display: grid;
+  place-items: center;
+}
+
+.card__number:hover {
+  cursor: pointer;
+  background-color: #7c8897;
+}
+
+.btn:link,
+.btn:visited {
+  display: block;
+  padding: 1.4rem 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #fc7613;
+  border-radius: 50rem;
+  transition: 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+  color: #fc7613;
+  background-color: #fff;
+}
+
+/*
+### Font sizes
+- 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+### Spacing system
+- 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
