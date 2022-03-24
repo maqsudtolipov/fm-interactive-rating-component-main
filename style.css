@@ -83,6 +83,10 @@ body {
   background-color: #7c8897;
 }
 
+.card__number--active {
+  background-color: #fc7613;
+}
+
 .btn:link,
 .btn:visited {
   display: block;

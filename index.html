@@ -22,6 +22,8 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <script defer src="app.js"></script>
   </head>
   <body>
     <div class="card">
@@ -34,11 +36,13 @@
         appreciated to help us improve our offering!
       </p>
       <ul class="card__list">
-        <li class="card__number"><span>1</span></li>
-        <li class="card__number"><span>2</span></li>
-        <li class="card__number"><span>3</span></li>
-        <li class="card__number"><span>4</span></li>
-        <li class="card__number"><span>5</span></li>
+        <li class="card__number" data-rating="1"><span>1</span></li>
+        <li class="card__number" data-rating="2"><span>2</span></li>
+        <li class="card__number" data-rating="3"><span>3</span></li>
+        <li class="card__number" data-rating="4"><span>4</span></li>
+        <li class="card__number card__number--active" data-rating="5">
+          <span>5</span>
+        </li>
       </ul>
       <a href="#" class="btn">Submit</a>
     </div>
