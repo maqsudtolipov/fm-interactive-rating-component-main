@@ -27,24 +27,42 @@
   </head>
   <body>
     <div class="card">
-      <div class="card__icon">
-        <img src="images/icon-star.svg" alt="Star" />
+      <div class="card--rating">
+        <div class="card__icon">
+          <img src="images/icon-star.svg" alt="Star" />
+        </div>
+        <h1 class="card__heading">How did we do?</h1>
+        <p class="card__paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ul class="card__list">
+          <li class="card__number" data-rating="1"><span>1</span></li>
+          <li class="card__number" data-rating="2"><span>2</span></li>
+          <li class="card__number" data-rating="3"><span>3</span></li>
+          <li class="card__number" data-rating="4"><span>4</span></li>
+          <li class="card__number" data-rating="5">
+            <span>5</span>
+          </li>
+        </ul>
+        <a href="#" class="btn">Submit</a>
       </div>
-      <h1 class="card__heading">How did we do?</h1>
-      <p class="card__paragraph">
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
-      <ul class="card__list">
-        <li class="card__number" data-rating="1"><span>1</span></li>
-        <li class="card__number" data-rating="2"><span>2</span></li>
-        <li class="card__number" data-rating="3"><span>3</span></li>
-        <li class="card__number" data-rating="4"><span>4</span></li>
-        <li class="card__number card__number--active" data-rating="5">
-          <span>5</span>
-        </li>
-      </ul>
-      <a href="#" class="btn">Submit</a>
+      <div class="card--submit hidden">
+        <div class="card__submit-img">
+          <img
+            src="images/illustration-thank-you.svg"
+            alt="Thank you illustration"
+          />
+        </div>
+        <div class="card__rating-text">
+          You selected <span id="rating"></span> out of 5
+        </div>
+        <h1 class="card__heading">Thank you!</h1>
+        <p class="card__paragraph">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
     </div>
     <!-- Rating state start 
 
