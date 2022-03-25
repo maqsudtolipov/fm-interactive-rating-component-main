@@ -22,6 +22,9 @@ ratingsContainer.addEventListener('click', function (e) {
 
 submitBtn.addEventListener('click', function (e) {
   e.preventDefault();
+
+  if(rating === 0) return;
+
   ratingBox.classList.add('hidden');
   submitBox.classList.remove('hidden');
   ratingLabel.innerHTML = rating;
